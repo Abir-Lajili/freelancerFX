@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" fx:controller="tn.esprit.info.alternance.freelancerfx.accController">
+   <top>
+      <AnchorPane prefHeight="417.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="1.0" prefHeight="400.0" prefWidth="600.0">
+               <children>
+                  <ImageView fitHeight="400.0" fitWidth="600.0" layoutX="-1.0">
+                     <image>
+                        <Image url="@../../../../../../../../../../../../OneDrive/Bureau/service-client-edreams.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="486.0" layoutY="7.0" mnemonicParsing="false" style="-fx-background-color: #032d4d;" text="Se connecter" textFill="#f4f1f1" />
+                  <Button layoutX="405.0" layoutY="7.0" mnemonicParsing="false" style="-fx-background-color: #032d4d;" text="S'inscrire" textFill="#f4f1f1" />
+                  <Button layoutX="324.0" layoutY="7.0" mnemonicParsing="false" style="-fx-background-color: #032d4d;" text="Reclamer" textFill="#f4f1f1" />
+                  <Button layoutX="259.0" layoutY="7.0" mnemonicParsing="false" onAction="#showOffres" style="-fx-background-color: #032d4d;" text="Offres" textFill="#f4f1f1" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

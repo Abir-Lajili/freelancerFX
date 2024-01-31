@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="sign" prefHeight="700.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo.Signup">
+   <children>
+      <TextField fx:id="fld_2" layoutX="434.0" layoutY="168.0" prefHeight="40.0" prefWidth="250.0" />
+      <TextField fx:id="fld_1" layoutX="142.0" layoutY="168.0" prefHeight="40.0" prefWidth="250.0" />
+      <TextField fx:id="fld_3" layoutX="142.0" layoutY="257.0" prefHeight="40.0" prefWidth="542.0" />
+      <PasswordField fx:id="fld_4" layoutX="142.0" layoutY="350.0" prefHeight="40.0" prefWidth="542.0" />
+      <PasswordField fx:id="fld_5" layoutX="142.0" layoutY="441.0" prefHeight="40.0" prefWidth="542.0" />
+      <Text fx:id="sign_1" fill="#032d4d" layoutX="308.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign up HERE" wrappingWidth="204.15423583984375">
+         <font>
+            <Font name="Roboto Bold Italic" size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="sign_2" fill="#032d4d" layoutX="142.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First name">
+         <font>
+            <Font name="Roboto Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="sign_3" fill="#032d4d" layoutX="434.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last name">
+         <font>
+            <Font name="Roboto Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="sign_4" fill="#032d4d" layoutX="142.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+         <font>
+            <Font name="Roboto Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="sign_5" fill="#032d4d" layoutX="142.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font name="Roboto Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="sign_6" fill="#032d4d" layoutX="142.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm Password">
+         <font>
+            <Font name="Roboto Bold" size="15.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="fld_6" layoutX="142.0" layoutY="527.0" prefHeight="35.0" prefWidth="542.0" />
+      <Text fx:id="sign_7" fill="#032d4d" layoutX="142.0" layoutY="513.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Country">
+         <font>
+            <Font name="Roboto Bold" size="15.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="sign_8" layoutX="142.0" layoutY="578.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="560.0" text="Yes, I understand and agree to the Khadamni Terms of Service, User Agreement, and Privacy Policy ." />
+      <Button fx:id="sign_9" layoutX="142.0" layoutY="619.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="542.0" style="-fx-background-color: #032d4d; -fx-background-radius: 50px;" text="Create my account" textFill="WHITE">
+         <font>
+            <Font name="Roboto Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

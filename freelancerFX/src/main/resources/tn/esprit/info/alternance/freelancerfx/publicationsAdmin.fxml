@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="476.0" prefWidth="681.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.info.alternance.javafx.PublicationsAdminController">
+   <children>
+      <AnchorPane prefHeight="528.0" prefWidth="723.0">
+         <children>
+            <Pane layoutX="248.0" layoutY="98.0" prefHeight="5.0" prefWidth="423.0" style="-fx-background-color: #032d4d;" />
+            <TableView fx:id="table" layoutX="248.0" layoutY="111.0" prefHeight="200.0" prefWidth="423.0">
+              <columns>
+                <TableColumn fx:id="idPub" prefWidth="26.4000244140625" text="Id" />
+                <TableColumn fx:id="titrePub" prefWidth="79.199951171875" text="Titre" />
+                  <TableColumn fx:id="contenuPub" prefWidth="166.39999389648438" text="Contenu" />
+                  <TableColumn fx:id="datePub" prefWidth="68.800048828125" text="Date" />
+                  <TableColumn fx:id="statusPub" prefWidth="81.60003662109375" text="Status" />
+              </columns>
+            </TableView>
+            <Text fill="#032d4d" layoutX="321.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Détails Des Publications" textAlignment="CENTER" wrappingWidth="276.5367431640625">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Text>
+            <VBox layoutX="248.0" layoutY="322.0" prefHeight="190.0" prefWidth="195.0" spacing="3.0" AnchorPane.topAnchor="322.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Titre" wrappingWidth="152.5366973876953">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font></Text>
+                  <TextField fx:id="tfTitre" style="-fx-background-radius: 2px;" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Contenu" wrappingWidth="152.5366973876953">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font></Text>
+                  <TextField fx:id="tfContenu" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="152.5366973876953">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font></Text>
+                  <TextField fx:id="tfDate" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Status" wrappingWidth="152.5366973876953">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font></Text>
+                  <TextField fx:id="tfStatus" prefHeight="12.0" prefWidth="195.0" />
+               </children>
+            </VBox>
+            <VBox layoutX="471.0" layoutY="355.0" prefHeight="158.0" prefWidth="200.0" spacing="15.0">
+               <children>
+                  <Button fx:id="btnEnregistrer" mnemonicParsing="false" onAction="#onEnregisterPublication" prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: #032d4d;" text="Enregistrer" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="btnModifier" mnemonicParsing="false" onAction="#onModifierPublication" prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: #032d4d;" text="Modifier" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="btnSupprimer" mnemonicParsing="false" onAction="#onSupprimerPublication" prefWidth="102.0" style="-fx-background-color: #032d4d;" text="Supprimer" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="btnSupprimerTous" mnemonicParsing="false" onAction="#onSupprimerTous" prefHeight="26.0" prefWidth="128.0" style="-fx-background-color: #032d4d;" text="Supprimer Tous" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

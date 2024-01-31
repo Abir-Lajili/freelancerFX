@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="449.0" prefWidth="711.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.info.alternance.javafx.dashboardAdminController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="65.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #032d4d;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <HBox alignment="TOP_RIGHT" layoutX="511.0" prefHeight="43.0" prefWidth="529.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.20000000000004547" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button graphicTextGap="7.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="136.0" style="-fx-background-color: WHITE;" text="ACCUEIL">
+                           <HBox.margin>
+                              <Insets top="26.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <FontAwesomeIcon glyphName="HOME" size="1.2em" />
+                           </graphic>
+                        </Button>
+                        <Button graphicTextGap="7.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="136.0" style="-fx-background-color: WHITE;" text="PAIEMENT">
+                           <HBox.margin>
+                              <Insets top="26.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <FontAwesomeIcon glyphName="MONEY" size="1.2em" />
+                           </graphic>
+                        </Button>
+                        <Button graphicTextGap="7.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="136.0" style="-fx-background-color: WHITE;" text="Se Déconnecter">
+                           <HBox.margin>
+                              <Insets top="26.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <FontAwesomeIcon glyphName="SIGN_OUT" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="347.0" prefWidth="176.0" style="-fx-background-color: #032d4d;" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox layoutX="20.0" layoutY="67.0" prefHeight="200.0" prefWidth="120.0" style="-fx-background-image: #032d4d;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="53.0">
+                     <children>
+                        <Button graphicTextGap="7.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="176.0" style="-fx-background-color: #032d4d;" text="UTILISATEURS" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <graphic>
+                              <FontAwesomeIcon fill="WHITE" glyphName="USER" text="" />
+                           </graphic>
+                        </Button>
+                        <Button graphicTextGap="7.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="176.0" style="-fx-background-color: #032d4d;" text="OFFRES" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIcon fill="WHITE" glyphName="FILE" />
+                           </graphic>
+                        </Button>
+                        <Button graphicTextGap="7.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="176.0" style="-fx-background-color: #032d4d;" text="CONTRATS" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIcon fill="WHITE" glyphName="CHAIN" />
+                           </graphic>
+                        </Button>
+                        <Button graphicTextGap="7.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="176.0" style="-fx-background-color: #032d4d;" text="FORUM" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIcon fill="WHITE" glyphName="COMMENT" />
+                           </graphic>
+                        </Button>
+                        <Button graphicTextGap="7.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="176.0" style="-fx-background-color: #032d4d;" text="RECLAMATIONS" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIcon fill="WHITE" glyphName="EDIT" />
+                           </graphic>
+                        </Button>
+                        <Button graphicTextGap="7.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="176.0" style="-fx-background-color: #032d4d;" text="EVENEMENTS" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIcon fill="WHITE" glyphName="CALENDAR" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="115.0" prefWidth="160.0" style="-fx-border-color: #032d4d;">
+                     <children>
+                        <FontAwesomeIcon glyphName="USER" layoutX="14.0" layoutY="59.0" size="3em" text="" wrappingWidth="30.4000244140625" />
+                        <Label layoutX="9.0" layoutY="92.0" text="Nombre total d'utilisateurs" textFill="#032d4d" />
+                        <Label layoutX="130.0" layoutY="26.0" text="0" textFill="#032d4d">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="182.0" layoutY="14.0" prefHeight="115.0" prefWidth="173.0" style="-fx-border-color: #032d4d;">
+                     <children>
+                        <Label layoutX="4.0" layoutY="92.0" text="Nombre total de reclamations" textFill="#032d4d" />
+                        <FontAwesomeIcon layoutX="14.0" layoutY="61.0" size="3em" />
+                        <Label layoutX="135.0" layoutY="28.0" text="0" textFill="#032d4d">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="361.0" layoutY="14.0" prefHeight="115.0" prefWidth="160.0" style="-fx-border-color: #032d4d;">
+                     <children>
+                        <Label layoutX="12.0" layoutY="92.0" prefHeight="18.0" prefWidth="134.0" text="Nombre total des offres" textFill="#032d4d" />
+                        <FontAwesomeIcon layoutX="14.0" layoutY="62.0" size="3em" />
+                        <Label layoutX="130.0" layoutY="29.0" text="0" textFill="#032d4d">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <BarChart layoutX="38.0" layoutY="168.0" prefHeight="216.0" prefWidth="461.0">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+                  <Label layoutX="211.0" layoutY="146.0" text="Taux De Paiement" textFill="#032d4d">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+      <AnchorPane prefHeight="102.0" prefWidth="194.0">
+         <children>
+            <Label layoutX="20.0" layoutY="27.0" prefHeight="31.0" prefWidth="160.0" style="-fx-background-color: WHITE;" text="KHADAMNI" textFill="#032d4d">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

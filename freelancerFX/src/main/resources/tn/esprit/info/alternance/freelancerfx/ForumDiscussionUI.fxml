@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.info.alternance.javafx.ForumDiscussionUIController">
+   <children>
+      <ListView layoutY="32.0" prefHeight="248.0" prefWidth="600.0" />
+      <Label layoutX="8.0" layoutY="45.0" prefHeight="18.0" prefWidth="70.0" text="Titre" textFill="#032d4d" />
+      <TextField fx:id="titrePub" layoutX="78.0" layoutY="41.0" prefHeight="26.0" prefWidth="522.0" />
+      <Label layoutX="8.0" layoutY="75.0" prefHeight="18.0" prefWidth="85.0" text="Content" />
+      <TextArea fx:id="contentPub" layoutX="77.0" layoutY="75.0" prefHeight="142.0" prefWidth="522.0" text="&#10;" />
+      <Button fx:id="addPub" layoutX="77.0" layoutY="224.0" mnemonicParsing="false" onAction="#addPublication" prefHeight="26.0" prefWidth="153.0" text="Add Publication" />
+      <ListView layoutY="286.0" prefHeight="120.0" prefWidth="600.0" />
+      <Label layoutX="8.0" layoutY="298.0" text="Add new Comment" />
+      <TextArea fx:id="comment" layoutX="8.0" layoutY="334.0" prefHeight="39.0" prefWidth="476.0" text="comment 3" />
+      <Button fx:id="addComment" layoutX="492.0" layoutY="341.0" mnemonicParsing="false" onAction="#addCommentToPub" text="Add Comment" />
+   </children>
+</AnchorPane>
